@@ -1,0 +1,89 @@
+git status : gives status about a git
+
+git init : Initialize a git
+
+git add --a : Add all the files in the folder in staging area
+
+git commit -m "Message" : It will commit the git and take a snapshot
+
+git log : It will tell us all the commit that had been done with the message written above 
+
+git add filename.extension : It will commit only one file of which we add name 
+
+rm -rf .git : It will delete the repository
+
+git clone <link> : It will create a local copy of all the files available in the git
+
+git clone <link> <name> : It will save the file by the name specified by you
+
+pwd : It tells about your current location (Present Working Directory)
+
+ls : It will list all the files present at your location
+
+cd : It is used to change your Directory/Location
+
+touch <filename>.<extension> : Will generate a file of given name and extension
+
+touch .gitignore : This will create a file and in this file the names we will write will get ignored
+(If we write *.log in the .gitignore file then it will ignore all the files having .log extension)
+(If we write dir/ in the .gitignore file then it will ignore all the files in the directory)
+(if we write /dir/ it will ignore outside folder name dir but will consider inside folder name dir)
+
+git add . : This will stage the .gitignore file (we can also use git add --a)
+
+git diff : It will show the difference between the staged file and the modified file ( or compare files in staging area and working directory)
+
+git diff --staged : It will compare the previous comment with the recent comment
+
+git commit -a -m "message" : It will directly commit the file with the given message
+
+git rm <filename.extension> : It will remove the file from the commit and delete it
+
+git mv <filename.extension> <nametobekept.extension> : It will rename the file
+
+git rm --cached <filename.extension> : It will stop tracking a file
+
+git log -p -n : It will show the last n commits with the difference between them
+
+git log --pretty=oneline : It will show all the commits in one line
+
+git log --pretty=full : It will show all the commits with author 
+
+git log --pretty=format:"%h -- %an" : It will give output as abbreviated hash of commit -- name
+
+Some more formats : https://git-scm.com/docs/pretty-formats 
+
+git commit --amend : To change (Press I then Esc :wq to exit)
+
+git checkout -- <filename.extension> : This will restore the previous data of the file
+
+git checkout -f : It will revert back all the changes you have done and go in previous state
+
+git config --global alias.st status : It will replace the git status command by git st
+
+git branch -m master : To go into master branch from main branch
+
+git checkout -b develop : It will create a new branch named 'develop' and take us into that
+
+git checkout master : To go into master branch from any developing branch
+
+git branch : It will show all the branches that are been made and the branch which is highlighted in green colour is the current branch you are in
+
+git checkout <branch name> : To get into this branch from any branch
+
+git merge <branch name> : Go into master branch and type this command it will merge the branch into master branch
+
+git branch -v : It will show all the branches followed with small hash and the message given to them while committing
+
+git branch --merged : It will show all the merged branches 
+
+git branch --no-merged : It will show all the branches which are not merged
+
+git branch -d <branch name> : It will delete the branch (It will give error if it is not merged with master)
+
+git branch -D <branch name> : It will delete the branch without giving error even if it is not merged 
+
+git push origin <branch name> : It will push the branch on GitHub
+
+git push -d origin <branch name> " It will delete the branch from GitHub
+
