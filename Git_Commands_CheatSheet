@@ -85,5 +85,5 @@ git branch -D <branch name> : It will delete the branch without giving error eve
 
 git push origin <branch name> : It will push the branch on GitHub
 
-git push -d origin <branch name> " It will delete the branch from GitHub
+git push -d origin <branch name> : It will delete the branch from GitHub
 
