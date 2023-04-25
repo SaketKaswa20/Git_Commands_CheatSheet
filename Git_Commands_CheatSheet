@@ -2,7 +2,7 @@ git status : gives status about a git
 
 git init : Initialize a git
 
-git add --a : Add all the files in the folder in staging area
+git add --a : Add all the files in the folder in staging area [ you can also use git add . ]
 
 git commit -m "Message" : It will commit the git and take a snapshot
 
